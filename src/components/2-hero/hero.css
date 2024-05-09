@@ -1,0 +1,105 @@
+/* ===================================
+          Table Of Content Hero
+=====================================
+1- left section
+2- right section animation
+3- MediaQuerry
+*/
+
+section.hero {
+  margin-top: 3rem;
+}
+
+/* ===================================
+        1         left section
+=====================================*/
+
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  padding: 2px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.1) inset;
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+section.hero .parent-avatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+section.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+}
+
+section.hero .all-icons.flex {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons.flex .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+.btnd {
+  background-color: var(--btnbg);
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.btnd:hover {
+  opacity: 1;
+  color: var(--blue);
+  background-color: rgba(36, 37, 46, 1);
+}
+/* ===================================
+      2   right section animation
+=====================================*/
+
+.animations {
+  -ms-translate: 50px 45px;
+  -webkit-translate: 50px 45px;
+  translate: 50px 45px;
+}
+
+/* ===================================
+          3. MediaQuerry
+=====================================
+*/
+
+@media (max-width: 1250px) {
+  .animations {
+    display: none;
+  }
+  section.hero .all-icons.flex {
+    flex-wrap: wrap;
+  }
+}
